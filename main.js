@@ -1,9 +1,9 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import './style.css'
-import javascriptLogo from '../javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from '../counter.js'
+// import javascriptLogo from './javascript.svg'
+// import viteLogo from '/dist/vite.svg'
+// import { setupCounter } from './counter.js'
 
 //rcc:THIS DIDN'T WORK AT ALL UNLESS I SPECIFICALLY COMMENTED OUT THIS document.querySelctor and setUpCounter, NO IDEA WHY.
 // document.querySelector('#app').innerHTML = `
