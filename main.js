@@ -83,17 +83,17 @@ scene.add(ambientLight);
 const gridHelper = new THREE.GridHelper(200,50);
 scene.add(gridHelper)
 
-const spaceTexture = new THREE.TextureLoader().load('images/rainyForest.jpg')
+const spaceTexture = new THREE.TextureLoader().load('./images/rainyForest.jpg')
 scene.background = spaceTexture;
 
-const thumbsTexture = new THREE.TextureLoader().load('images/guyThumbsUp.jpg')
+const thumbsTexture = new THREE.TextureLoader().load('./images/guyThumbsUp.jpg')
 const sphereGeometry = new THREE.SphereGeometry( 8, 11, 5 );
 const thumbsMaterial = new THREE.MeshBasicMaterial({map: thumbsTexture})
 const thumbsMesh = new THREE.Mesh(sphereGeometry, thumbsMaterial);
 thumbsMesh.position.set(5, 15, 0);
 scene.add(thumbsMesh);
 
-const normalTexture = new THREE.TextureLoader().load('images/normals/purpleNormal.png');
+const normalTexture = new THREE.TextureLoader().load('./images/normals/purpleNormal.png');
 const torusGeo = new THREE.TorusKnotGeometry( 5, 1, 250, 5, 9, 15 );
 const torusMaterial = new THREE.MeshStandardMaterial( {
     color: 0x00fff9,
